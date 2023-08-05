@@ -1,0 +1,35 @@
+{
+  "name": "@zhakk_harn/identifiants_uniques",
+  "version": "1.0.1",
+  "description": "generation d'identifiants humain-compatible sous la forme <nom><determinant><animal><adjectif>",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "unbuild",
+    "test": "node test/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "identifier",
+    "generator",
+    "French"
+  ],
+  "author": "valentin dupas",
+  "license": "LGPL-3.0",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/zhakk-harn/identifiants_uniques"
+  },
+  "devDependencies": {
+    "unbuild": "^1.2.1"
+  }
+}
